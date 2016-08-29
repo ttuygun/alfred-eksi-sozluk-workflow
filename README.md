@@ -8,7 +8,7 @@ This alfred workflow shows search queries from Turkey's eksisozluk.com
 e keyword continues with search queries
 * e alfred
 
-# Copyright and License
+# Known Issues
 Turkish characters causes errors. 
 
 # Copyright and License
