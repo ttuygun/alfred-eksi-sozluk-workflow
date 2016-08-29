@@ -2,7 +2,7 @@
 This alfred workflow shows search queries from Turkey's eksisozluk.com 
 
 # Install
-[Download](https://github.com/ttuygun/) workflow and start to use it!
+[Download](https://github.com/ttuygun/alfred-eksi-sozluk-workflow/blob/master/Ekşi%20Sözlük.alfredworkflow) workflow and start to use it!
 
 # Usage
 e keyword continues with search queries
