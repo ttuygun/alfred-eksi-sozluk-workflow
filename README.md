@@ -6,10 +6,10 @@ This alfred workflow shows search queries from Turkey's eksisozluk.com
 
 # Usage
 e keyword continues with search queries
-* e alfred
 
-# Known Issues
-Turkish characters causes errors. 
+* e türkiye
+
+![screenshot eksisozluk workflow](https://raw.githubusercontent.com/ttuygun/alfred-eksi-sozluk-workflow/master/screenshot.png)
 
 # Copyright and License
-This script created by Tarık Taha Uygun and released under MIT license.
+This script created by Tarık Taha Uygun and released under MIT license except site's logo.
