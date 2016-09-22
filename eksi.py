@@ -1,24 +1,22 @@
 #!/usr/bin/python
-# encoding: utf-8
+# encoding: iso-8859-1
 import sys
+import urllib
 from workflow import Workflow, ICON_WEB, web
+from unicodedata import normalize
 
 base_url = "https://eksisozluk.com/"
 
 def main(wf):
-    headers = {'Content-Type': 'application/json; charset=utf-8' ,'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}
+    headers = {'X-Requested-With': 'XMLHttpRequest'}
 
-    if len(wf.args):
-        query = wf.args[0]
-        query = query.replace(" ", "%20")
-    else:
-        query = None
-
+    args = wf.args
+    query = urllib.quote_plus(args[0].encode('utf-8'))
+    
     url = 'https://eksisozluk.com/autocomplete/query?q='+query
     r = web.get(url, headers=headers)
     r.raise_for_status()
     result = r.json()
-
 
     result = result['Titles']
 
